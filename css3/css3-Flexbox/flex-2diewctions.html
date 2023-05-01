@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="widt=device-width, initial-scale=1.0">
+	<title> CSS flexbox(flex-direction) </title>
+	<style type="text/css">
+		.container{
+			display: flex;
+			color: hsla(0, 100%, 50%, 1.0);
+			border: 2px solid black;	
+			margin-top: 20px;	
+		}
+		.container div{
+			background-color: palegoldenrod;
+			width: 100px;
+			line-height: 50px;
+			margin: 15px;
+			text-align: center;
+		}
+
+		.flex1{flex-direction: row;}
+		.flex2{flex-direction: row-reverse;}
+		.flex3{flex-direction: column;}
+		.flex4{flex-direction: column-reverse;}
+
+
+	</style>
+
+</head>
+
+<body>
+
+		<div class="container flex1">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>		
+		</div>
+		<div class="container flex2">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>		
+		</div>
+		<div class="container flex3">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>		
+		</div>
+		<div class="container flex4">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>		
+		</div>
+
+
+
+</body>
+
+</html>

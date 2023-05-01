@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="widt=device-width, initial-scale=1.0">
+	<title> CSS flexbox(kutu modeli) </title>
+	<style type="text/css">
+		.container{
+			display: flex;
+			color: hsla(0, 100%, 50%, 1.0);
+			border: 2px solid black;		
+			height: 200px;
+		}
+		.container div{
+			background-color: palegoldenrod;
+			width: 100px;
+			line-height: 50px;
+			margin: 15px;
+			text-align: center;
+			font-size: 25px;
+		}
+			.align-item1{align-items: stretch;}
+			.align-item2{align-items: flex-start;}
+			.align-item3{align-items: center;}
+			.align-item4{align-items: flex-end;}
+			.align-item5{align-items: baseline;}
+
+			.align-item5 div:nth-child(2){ line-height: 25px; }
+			.align-item5 div:nth-child(3){ line-height: 125px; }
+	</style>
+</head>
+
+<body>
+
+
+<div class="container align-item1">
+	<div>1</div>	<div>2</div>	<div>3</div>	<div>4</div>
+</div>
+<div class="container align-item2">
+	<div>1</div>	<div>2</div>	<div>3</div>	<div>4</div>
+</div>
+<div class="container align-item3">
+	<div>1</div>	<div>2</div>	<div>3</div>	<div>4</div>
+</div>
+<div class="container align-item4">
+	<div>1</div>	<div>2</div>	<div>3</div>	<div>4</div>
+</div>
+<div class="container align-item5">
+	<div>1</div>	<div>2</div>	<div>3</div>	<div>4</div>
+</div>
+
+
+
+</body>
+
+</html>

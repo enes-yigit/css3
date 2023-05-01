@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="widt=device-width, initial-scale=1.0">
+	<title> CSS flexbox(flow) </title>
+	<style type="text/css">
+		.container{
+			display: flex;
+			color: hsla(0, 100%, 50%, 1.0);
+			border: 2px solid black;		
+		}
+		.container div{
+			background-color: palegoldenrod;
+			width: 100px;
+			line-height: 50px;
+			margin: 15px;
+			text-align: center;
+			font-size: 25px;
+		}
+
+		.flex-flow{flex-flow: wrap row;}
+		.flex-flow2{flex-flow: nowrap column;}
+	</style>
+</head>
+
+<body>
+		<div class="container flex-flow">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+			<div>11</div>
+			<div>12</div>
+		</div>
+		<div class="container flex-flow2">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+			<div>11</div>
+			<div>12</div>
+		</div>
+	
+
+
+</body>
+
+</html>

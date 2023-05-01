@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="widt=device-width, initial-scale=1.0">
+	<title> CSS Side Bar Menu </title>
+	<style type="text/css">
+		 body { font-family: "roboto",sans-serif; } 
+		 .sidenav{ height: 100vh; width: 0px; position: fixed; top: 0; left: 0; padding-top: 60px; background-color: #111; z-index: 999; transition: 0.5s; overflow-x: hidden;}
+		 .sidenav a {display: block; text-decoration: none; font-size: 20px; color: #aaa; padding: 8px 8px 8px 35px; transition: 0.3s;}
+		 .sidenav a:hover{color: #f1f1f1; }
+		 .sidenav .closeBtn{ position: absolute;top: 0;right: 20px; font-size: 36px; }
+		 .open{ font-size: 30px; cursor: pointer; }
+	</style>
+
+ 
+</head>
+<body>
+	<!--  Css3 Lessons =Side Bar Menu -->
+ 	<div class="sidenav" id="sidebarNav">
+ 		<a href="javascript:void(0)" class="closeBtn" onclick="closeNav	()">&times;</a>
+ 		<a href="#"> Home</a>
+ 		<a href="#"> Team</a>
+ 		<a href="#"> Contact</a>
+ 		<a href="#"> About</a>
+ 	</div>
+
+ 	<span class="open" onclick="openNav()">&#9776; open</span>
+ 	<main id="main">
+ 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</main>
+
+ 	<script type="text/javascript">
+ 		function openNav() {
+ 			document.getElementById("sidebarNav").style.width = "250px"
+ 			document.getElementById("main").style.margin = "250px"
+ 			document.body.style.backgroundColor = "rgba(0,0,0, 0.4)";
+ 		}
+ 		function closeNav() {
+ 			document.getElementById("sidebarNav").style.width = "0"
+ 			document.getElementById("main").style.margin = "0"
+ 			document.body.style.backgroundColor = "#fff";
+
+ 		}
+ 	</script>
+
+</body>
+</html>  

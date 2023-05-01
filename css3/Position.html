@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="widt=device-width, initial-scale=1.0">
+	<title> CSS Dersleri </title>
+	<style type="text/css">
+		div { width: 400px; height: 200px; background-color: darkorange;}
+		
+		div.relative{
+			position: relative;
+			top: 50px;
+			left: 40%;
+		}
+		div.fixed{
+			position: fixed;
+			bottom: 0;
+			right: 0;
+		}
+		div.stickey{
+			position: sticky;
+			top: 50px;
+		}
+		div.absolute{
+			position: absolute;
+			top: 50px;
+			right: 20%;
+		}
+
+
+	</style>
+</head>
+<body>
+<!-- 		CSS Position Property:
+	position: static - varsayılan
+	position: relative - top lrft
+	position: fixed - sabit konumlandırma
+	position: absolute - üst üste katman relative içinde konumlandırabilirsin
+	position: stickey - scroll bara göre konumlandırma -->
+
+	<div class="relative"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p></div>
+	<div class="fixed"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p></div>
+	<div class="stickey"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p></div>
+	<p style="padding-bottom: 2000px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	consequat.</p>
+	<div class="absolute"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p></div>
+
+	
+</body>
+</html>

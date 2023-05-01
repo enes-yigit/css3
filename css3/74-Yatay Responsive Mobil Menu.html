@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="widt=device-width, initial-scale=1.0">
+	<title> CSS Side Bar Menu </title>
+	<style type="text/css">
+		body{margin: 0; font-family: fantasy;}
+		.topNav{ background-color: #333; overflow:hidden ; }
+		.topNav a{ display: block; float: left; color: #f1f1f1; padding: 14px 18px; text-decoration: none; font-size: 17px; }
+		.topNav a.active{ background-color: #17a3b8; color: #fff;}
+		.topNav a:hover:not(.active){ background-color: #555; color: #fff; }
+		.topNav .icon{float: right; font-size: 15px;}
+
+
+ 		
+	@media screen and (max-width: 786px){
+		.topNav a:not(:first-child){display: none;}
+		.topNav a.icon { display: block;}
+
+		.topNav.responsive{position: relative;}
+		.topNav.responsive.icon{position: absolute; right: 0; top: 0;}
+		.topNav.responsive a { float: none;display: block; }
+	}
+
+	</style>
+
+ 
+</head>
+<body>
+	<!--  Css3 Lessons - Responsive Horizontal Menu -->
+     <nav class="topNav" id="topNavId">
+     	<a href="#" class="active">Home</a>
+     	<a href="#">Team</a>
+     	<a href="#">Contact</a>
+     	<a href="#">About</a>
+      	<a href="#" class="icon" onclick="reponsiveMenu()">&#9776;</a>
+     </nav>
+
+     <script type="text/javascript">#
+
+     function responsiveMenu() { 
+
+     	var x = document.getElementById("topnavId");
+     	if (x.className == "topNav") {
+     		x.className += " responsive";
+     	}else{
+     		x.className = "topNav";
+     	}
+
+     }
+
+
+
+
+	 </script>
+
+</body>
+</html>  

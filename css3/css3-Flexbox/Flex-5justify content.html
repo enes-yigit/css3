@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="widt=device-width, initial-scale=1.0">
+	<title> CSS flexbox(justify content) </title>
+	<style type="text/css">
+		.container{
+			display: flex;
+			color:darksalmon;
+			border: 2px solid black;		
+		}
+		.container div{
+			background-color: blanchedalmond;
+			width: 100px;
+			line-height: 50px;
+			margin: 15px;
+			text-align: center;
+			font-size: 25px;
+		}
+
+		.justify-content1{justify-content: flex-start;}
+		.justify-content2{justify-content: center;}
+		.justify-content3{justify-content: flex-end;}
+		.justify-content4{justify-content: space-between;}
+		.justify-content5{justify-content: space-around;}
+		.justify-content6{justify-content: space-evenly;}
+
+
+	</style>
+</head>
+
+<body>
+<div class="container justify-content1">
+	<div>1</div>	<div>2</div>	<div>3</div>
+</div>
+
+<div class="container justify-content2">
+	<div>1</div>	<div>2</div>	<div>3</div>
+</div>
+
+<div class="container justify-content3">
+	<div>1</div>	<div>2</div>	<div>3</div>
+</div>
+
+<div class="container justify-content4">
+	<div>1</div>	<div>2</div>	<div>3</div>	<div>4</div>
+</div>
+
+<div class="container justify-content5">
+	<div>1</div>	<div>2</div>	<div>3</div>
+</div>
+<div class="container justify-content6">
+	<div>1</div>	<div>2</div>	<div>3</div>
+</div>
+</body>
+
+</html>

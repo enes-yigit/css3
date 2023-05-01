@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="widt=device-width, initial-scale=1.0">
+	<title> CSS Dersleri </title>
+	<style type="text/css">
+	* {text-align: center; font-family: initial; box-sizing: border-box;}
+	header{ background-color: #f1f1f1; padding: 30px; }
+	footer{ background-color: #f1f1f1; padding: 10px;}
+	body{ margin: 0; }
+	main{ width: 80%; margin: auto; }
+
+	.row{ margin: 50px 0; }
+	.row:after {content:"" ; display: table; clear: both;}
+	.row div { padding: 30px; height: 400px; float: left;}
+	.col-100{ width: 100%; }
+	.col-50{ width: 50%; }
+	.col-25{ width: 25%; }
+	.col-33{ width: 33.33333%; }
+	</style>
+
+</head>
+<body>
+		<header><h1>Header</h1></header>
+
+		<main>
+			<div class="row">
+				<div class="col-100" style="background-color: #aaa;">Content</div>
+			</div>
+
+			<div class="row">
+				<div class="col-50"  style="background-color: #aaa;">Content</div>
+				<div class="col-50"  style="background-color: #bbb;">Content</div>
+			</div>
+
+			<div class="row">
+				<div class="col-25" style="background-color: #aaa;">Content</div>
+				<div class="col-50" style="background-color: #bbb;">Content</div>
+				<div class="col-25" style="background-color: #aaa;">Content</div>
+			</div>
+
+			<div class="row">
+				<div class="col-33" style="background-color: #aaa;">Content</div>
+				<div class="col-33" style="background-color: #bbb;">Content</div>
+				<div class="col-33" style="background-color: #aaa;">Content</div>
+			</div>
+
+			<div class="row">
+				<div class="col-25"  style="background-color: #aaa;">Content</div>
+				<div class="col-25" style="background-color: #bbb;">Content</div>
+				<div class="col-25" style="background-color: #aaa;">Content</div>
+				<div class="col-25" style="background-color: #bbb;">Content</div>
+			</div>
+
+	
+
+		</main>
+		
+		<footer><p>Footer</p></footer>
+</body>
+</html>

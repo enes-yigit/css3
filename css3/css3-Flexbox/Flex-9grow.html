@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="widt=device-width, initial-scale=1.0">
+	<title> CSS flexbox(kutu modeli) </title>
+	<style type="text/css">
+		.container{
+			display: flex;
+			color: hsla(0, 100%, 50%, 1.0);
+			border: 2px solid black;		
+		}
+		.container div{
+			background-color: palegoldenrod;
+			width: 100px;
+			line-height: 50px;
+			margin: 15px;
+			text-align: center;
+			font-size: 25px;
+		}
+		.flex-grow1{flex-grow:1 ;}
+		.flex-grow2{flex-grow:1 ;}
+		.flex-grow3{flex-grow:3 ;}
+	</style>
+</head>
+
+<body>
+<div class="container">
+	<div class="flex-grow1">1</div>
+	<div class="flex-grow2">2</div>
+	<div class="flex-grow3">3</div>
+</div>
+
+
+
+</body>
+
+</html>
